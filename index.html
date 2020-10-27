@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>birthday list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="navbar navbar-style">
+        <div class="my-info">
+        <div id="myform" class="k">
+
+            <input type="text" id="name" name="name" placeholder="اسم">
+
+            <input type="text" id="day" name="day" placeholder="روز">
+
+            <input type="text" id="month" name="month" placeholder="ماه">
+
+            <input class="btn btn-secondary add-btn" type="button" id="add" value="ثبت" onclick="addRow()">
+</div>
+        </div>
+
+    </div>
+
+
+
+    <div id="mydata" class="my-data">
+
+        <!-- <p>لیست روز تولد</p> -->
+
+        <table id="TableInfo">
+            <tr>
+                <!-- <td><b></b></td> -->
+                <th><b>اسم</b></th>
+                <th><b>روز</b></th>
+                <th><b>ماه</b></th>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
