@@ -26,35 +26,37 @@ body {
   position: relative;
 }
 
-input {
+.header-input {
   margin: 0;
-  border: 5px solid #ffd300;
+  border: 5px solid #b12323;
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
   text-align: center;
-  background: #E0FFFF;
+  background: #FFFFFF;
   color: black;
+  width: 200px;
 }
 
 
 .add-btn {
   padding: 10px;
-  background-color: #ffd300;
-  color: #36648B;
+  background-color: #b11b1b;
+  color: white;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 10px;
-
+  border-radius: 50px;
+  width: 200px;
+  border: 5px double white;
 }
 
 .add-btn:hover {
-  background: #E0FFFF;
-  color: black;
+  background: black;
+  color: white;
+  border: 5px double #ffe76f;
 }
-
 
 
 /**************************************** table part style************************************/
@@ -79,13 +81,13 @@ td {
 
 
 tr:nth-child(odd) {
-  background-color: #36648B;
+  background-color: rgb(123, 157, 187);
   color: #E0FFFF;
 }
 
 th {
 
-  background-color: #ffd300;
+  background-color: #ffe564;
   color: black;
   z-index: 2;
 }
@@ -93,6 +95,7 @@ th {
 
 table tr {
   counter-increment: row-num;
+
 }
 
 table tr td:first-child::before {
@@ -107,7 +110,5 @@ table tr td:first-child::before {
     width: 20%;
   }
 
-  .add-btn {
-    width: 15%;
-  }
+
 }
