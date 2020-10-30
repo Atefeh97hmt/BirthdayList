@@ -14,9 +14,8 @@ body {
   width: 100%;
   z-index: 10;
   top: 0;
-  background: #36648B;
+  background: #193855;
   padding: 30px 40px;
-
   text-align: center;
 }
 
@@ -40,7 +39,7 @@ body {
 
 
 .add-btn {
-  padding: 10px;
+  padding: 5px;
   background-color: #b11b1b;
   color: white;
   text-align: center;
@@ -50,6 +49,7 @@ body {
   border-radius: 50px;
   width: 200px;
   border: 5px double white;
+
 }
 
 .add-btn:hover {
@@ -58,6 +58,30 @@ body {
   border: 5px double #ffe76f;
 }
 
+.edit-btn {
+  color: #212529;
+  background-color: #ffe76f;
+  border-color: #ffe76f;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #b11b1b;
+  border-color: #b11b1b;
+  margin-right: 2px;
+}
+
+.edit-btn:hover {
+  background: black;
+  color: white;
+
+}
+
+.delete-btn:hover {
+  color: white;
+  background-color: #ff0000;
+
+}
 
 /**************************************** table part style************************************/
 
@@ -69,8 +93,6 @@ tbody {
 .responstable {
   margin: 1em 0;
   width: 100%;
-  color: darkblue;
-  border-radius: 12px;
 }
 
 th,
@@ -81,7 +103,7 @@ td {
 
 
 tr:nth-child(odd) {
-  background-color: rgb(123, 157, 187);
+  background-color: #7b9dbb;
   color: #E0FFFF;
 }
 
@@ -99,16 +121,23 @@ table tr {
 }
 
 table tr td:first-child::before {
-  content: counter(row-num) "- ";
+  content: counter(row-num) " ";
 }
 
 /**************************************** media query************************************/
 
-
-@media screen and (max-width:690px) {
-  input {
-    width: 20%;
+@media screen and (max-width:888px) {
+  .header-input {
+    width: 22%;
   }
 
+  .header-input::placeholder {
+    font-size: 12px;
+  }
+
+  .add-btn {
+    width: 22%;
+    font-size: 12px;
+  }
 
 }
