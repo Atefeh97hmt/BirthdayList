@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>birthday list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div>
+
+        <form class="navbar-style" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+
+                <input class="header-input" class="header-input" type="text" name="name" id="name"
+                    placeholder="اسم شما">
+
+                <input class="header-input" type="text" name="day" id="day" placeholder="روز تولد شما">
+
+                <input class="header-input" type="text" name="month" id="month" placeholder="ماه تولد شما">
+
+                <input class="btn add-btn" type="submit" value=" ثبت اطلاعات"></input>
+            </div>
+        </form>
+
+        <div class="my-data">
+            <table class="responstable table" id="birthdayList">
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>اسم</th>
+                        <th>روز</th>
+                        <th>ماه</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
