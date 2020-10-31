@@ -69,6 +69,10 @@ function validate() {
 
 
 
+
+
+////// search input filter//////
+
 function myFunction() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("filter");
@@ -87,6 +91,51 @@ function myFunction() {
         }
     }
 }
+
+
+
+
+
+
+////// sort number//////
+
+
+birthdayList.onclick = function (e) {
+    if (e.target.tagName != 'TH') return;
+
+    let th = e.target;
+
+    sortlist(th.cellIndex, th.dataset.type);
+};
+
+function sortlist(colNum, type) {
+    let tbody = birthdayList.querySelector('tbody');
+
+    let rowsArray = Array.from(tbody.rows);
+
+    // compare(a, b) compares two rows, need for sorting
+    let compare;
+
+    switch (type) {
+        case 'number':
+            compare = function (rowA, rowB) {
+                return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
+            };
+            //     break;
+            //   case 'string':
+            //     compare = function(rowA, rowB) {
+            //       return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
+            //     };
+            break;
+    }
+
+    // sort
+    rowsArray.sort(compare);
+
+    tbody.append(...rowsArray);
+}
+
+
 
 
 
@@ -152,43 +201,3 @@ function myFunction() {
 //         } 
 //     } 
 // } 
-
-
-
-
-
-
-birthdayList.onclick = function(e) {
-    if (e.target.tagName != 'TH') return;
-
-    let th = e.target;
- 
-    sortlist(th.cellIndex, th.dataset.type);
-  };
-
-  function sortlist(colNum, type) {
-    let tbody = birthdayList.querySelector('tbody');
-
-    let rowsArray = Array.from(tbody.rows);
-
-    // compare(a, b) compares two rows, need for sorting
-    let compare;
-
-    switch (type) {
-      case 'number':
-        compare = function(rowA, rowB) {
-          return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
-        };
-    //     break;
-    //   case 'string':
-    //     compare = function(rowA, rowB) {
-    //       return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML ? 1 : -1;
-    //     };
-        break;
-    }
-
-    // sort
-    rowsArray.sort(compare);
-
-    tbody.append(...rowsArray);
-  }
