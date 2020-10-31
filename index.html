@@ -27,18 +27,20 @@
                 <input class="header-input" type="text" name="month" id="month" placeholder="ماه تولد شما">
 
                 <input class="btn add-btn" type="submit" value=" ثبت اطلاعات"></input>
+             
             </div>
         </form>
+     
 
         <div class="my-data">
             <table class="responstable table" id="birthdayList">
                 <thead>
                     <tr>
-                        <th>ردیف</th>
-                        <th>اسم</th>
-                        <th>روز</th>
-                        <th>ماه</th>
                         <th></th>
+                        <th >اسم</th>
+                        <th data-type="number" >روز  </th>
+                        <th >ماه   </th>
+                        <th>   <input type="text" id="filter" class="filter" onkeyup="myFunction()" placeholder="Search for month"></th>
                     </tr>
                 </thead>
                 <tbody>
