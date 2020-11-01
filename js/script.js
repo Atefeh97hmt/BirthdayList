@@ -112,15 +112,15 @@ function SearchInput() {
 //////sort number////
 
 
-birthdayList.onclick = function(e) {
+birthdayList.onclick = function (e) {
     if (e.target.tagName != 'TH') return;
 
     let th = e.target;
- 
-    sortlist(th.cellIndex, th.dataset.type);
-  };
 
-  function sortlist(colNum, type) {
+    sortlist(th.cellIndex, th.dataset.type);
+};
+
+function sortlist(colNum, type) {
     let tbody = birthdayList.querySelector('tbody');
 
     let rowsArray = Array.from(tbody.rows);
@@ -129,16 +129,16 @@ birthdayList.onclick = function(e) {
     let compare;
 
     switch (type) {
-      case 'number':
-        compare = function(rowA, rowB) {
-          return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
-        };
+        case 'number':
+            compare = function (rowA, rowB) {
+                return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
+            };
 
-        break;
+            break;
     }
 
     // sort
     rowsArray.sort(compare);
 
     tbody.append(...rowsArray);
-  }
+}
