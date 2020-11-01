@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-.my-data {
+.birthdayList-container {
   height: 200px;
   top: 98px;
   position: relative;
@@ -27,8 +27,8 @@ body {
 
 .header-input {
   margin: 0;
-  border: 5px solid #b12323;
-  border-radius: 10px;
+  border: 2px solid #b12323;
+  border-radius: 50px;
   padding: 10px;
   font-size: 16px;
   text-align: center;
@@ -40,28 +40,30 @@ body {
 
 .add-btn {
   padding: 5px;
-  background-color: #b11b1b;
-  color: white;
+  background-color: #ffe76f;
+  color: #00a2ff;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 50px;
   width: 200px;
-  border: 5px double white;
+  border: 2px solid #5bc3ff;
 
 }
 
 .add-btn:hover {
   background: black;
   color: white;
-  border: 5px double #ffe76f;
+  border: 2px solid #ffe76f;
 }
 
 .edit-btn {
   color: #212529;
   background-color: #ffe76f;
   border-color: #ffe76f;
+  border-radius: 50px;
+  border: 2px solid #5bc3ff;
 }
 
 .delete-btn {
@@ -69,29 +71,31 @@ body {
   background-color: #b11b1b;
   border-color: #b11b1b;
   margin-right: 2px;
+  border-radius: 50px;
+  border: 2px solid #ff0000;
 }
 
 .edit-btn:hover {
   background: black;
   color: white;
-
+  border: 2px solid #ffe76f;
 }
 
 .delete-btn:hover {
   color: white;
   background-color: #ff0000;
-
+  border: 2px solid #b11b1b;
 }
 
 /**************************************** table part style************************************/
 
 tbody {
-  background-color: #E0FFFF;
-  color: #36648B;
+  background-color: #ecfcfc;
+  color: #08253f;
 }
 
 .responstable {
-  margin: 1em 0;
+  margin: 0.5em 0;
   width: 100%;
 }
 
@@ -103,14 +107,14 @@ td {
 
 
 tr:nth-child(odd) {
-  background-color: #7b9dbb;
-  color: #E0FFFF;
+  background-color:#F5F5F5;
+  color: #08253f;
 }
 
 th {
 
-  background-color: #ffe564;
-  color: black;
+  background-color: #5bc3ff;
+  color: white;
   z-index: 2;
 }
 
