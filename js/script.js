@@ -142,3 +142,11 @@ function sortlist(colNum, type) {
 
     tbody.append(...rowsArray);
 }
+
+
+
+
+
+
+
+
