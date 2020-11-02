@@ -39,16 +39,16 @@ body {
 
 
 .add-btn {
-  padding: 5px;
-  background-color: #ffe76f;
-  color: #00a2ff;
+  padding: 8px;
+  background-color: #5bc3ff;
+  color: #043552;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 50px;
   width: 200px;
-  border: 2px solid #5bc3ff;
+  border: 2px solid #ffffff;
 
 }
 
@@ -59,17 +59,15 @@ body {
 }
 
 .edit-btn {
-  color: #212529;
-  background-color: #ffe76f;
-  border-color: #ffe76f;
+  color: #043552;
+  background-color: #5bc3ff;
   border-radius: 50px;
-  border: 2px solid #5bc3ff;
+  border: 2px solid #ffffff;
 }
 
 .delete-btn {
   color: white;
   background-color: #b11b1b;
-  border-color: #b11b1b;
   margin-right: 2px;
   border-radius: 50px;
   border: 2px solid #ff0000;
