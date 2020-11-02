@@ -22,7 +22,7 @@
                 <input class="header-input" class="header-input" type="text" name="name" id="name"
                     placeholder="اسم شما">
 
-                <input class="header-input"   type="number" ng-model="number" oninput="if(this.value.length==2) return false;" min="0" max="31" name="day" id="day" placeholder="روز تولد شما">
+                <input class="header-input"   type="number" ng-model="number" onKeyPress="if(this.value.length==2) return false;" min="0" max="31" maxlength="2" name="day" id="day" placeholder="روز تولد شما">
 
                 <input  class="header-input" type="text" name="month" id="month" placeholder="ماه تولد شما">
 
