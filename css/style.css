@@ -84,7 +84,8 @@ body {
   background-color: #ff0000;
   border: 2px solid #b11b1b;
 }
-.filter{
+
+.filter {
   margin: 0;
   border: 2px solid #23b14e;
   border-radius: 50px;
@@ -106,10 +107,10 @@ tbody {
 }
 
 .responstable {
-  margin:2em 0;
+  margin: 2em 0;
   width: 95%;
   margin-right: 30px;
- 
+
 }
 
 
@@ -117,9 +118,10 @@ th,
 td {
   text-align: center;
   padding: 10px;
-  
+
 }
-td{
+
+td {
   border: 2px solid #a0e6f8;
 }
 
