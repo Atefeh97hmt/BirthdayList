@@ -40,7 +40,7 @@ body {
 
 .add-btn {
   padding: 8px;
-  background-color: #5bc3ff;
+  background-color: #fdff88;
   color: #043552;
   text-align: center;
   font-size: 16px;
@@ -48,7 +48,7 @@ body {
   transition: 0.3s;
   border-radius: 50px;
   width: 200px;
-  border: 2px solid #ffffff;
+  border: 2px solid #23b14e;
 
 }
 
@@ -60,9 +60,9 @@ body {
 
 .edit-btn {
   color: #043552;
-  background-color: #5bc3ff;
+  background-color: #fdff88;
   border-radius: 50px;
-  border: 2px solid #ffffff;
+  border: 2px solid #23b14e;
 }
 
 .delete-btn {
@@ -76,7 +76,7 @@ body {
 .edit-btn:hover {
   background: black;
   color: white;
-  border: 2px solid #ffe76f;
+  border: 2px solid #23b14e;
 }
 
 .delete-btn:hover {
@@ -84,25 +84,44 @@ body {
   background-color: #ff0000;
   border: 2px solid #b11b1b;
 }
+.filter{
+  margin: 0;
+  border: 2px solid #23b14e;
+  border-radius: 50px;
+  padding: 7px;
+  font-size: 16px;
+  text-align: center;
+  background: #FFFFFF;
+  color: black;
+  width: 180px;
+}
 
 /**************************************** table part style************************************/
 
 tbody {
   background-color: #ecfcfc;
   color: #08253f;
+
+
 }
 
 .responstable {
-  margin: 0.5em 0;
-  width: 100%;
+  margin:2em 0;
+  width: 95%;
+  margin-right: 30px;
+ 
 }
+
 
 th,
 td {
   text-align: center;
   padding: 10px;
+  
 }
-
+td{
+  border: 2px solid #a0e6f8;
+}
 
 tr:nth-child(odd) {
   background-color: #F5F5F5;
@@ -111,8 +130,8 @@ tr:nth-child(odd) {
 
 th {
 
-  background-color: #5bc3ff;
-  color: white;
+  background-color: #a0ff9d;
+  color: #042653;
   z-index: 2;
 }
 
