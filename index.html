@@ -8,6 +8,8 @@
     <title>birthday list</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -20,10 +22,10 @@
             <div>
 
                 <input class="header-input" class="header-input" type="text" name="name" id="name"
-                    placeholder="اسم شما">
+                    placeholder="اسم شما" >
 
                 <input class="header-input" type="number" ng-model="number"
-                    onKeyPress="if(this.value.length==2) return false;" min="0" max="31" maxlength="2" name="day"
+                   min="1" max="31" maxlength="2" name="day"
                     id="day" placeholder="روز تولد شما">
 
                 <input class="header-input" type="text" name="month" id="month" placeholder="ماه تولد شما">
@@ -40,10 +42,10 @@
                     <tr>
                         <th></th>
                         <th>اسم</th>
-                        <th data-type="number">روز </th>
+                        <th data-type="number">روز <i class="fa fa-mobile" aria-hidden="true"></i></th>
                         <th>ماه </th>
                         <th> <input type="text" id="filter" class="filter" onkeyup="SearchInput()"
-                                placeholder="Search for month"></th>
+                                placeholder="جستجوی ماه خاص"></th>
                     </tr>
                 </thead>
                 <tbody>
