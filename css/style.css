@@ -7,6 +7,8 @@
 body {
   font-family: iran-yekan;
   direction: rtl;
+  background-image: url(../img/2.jpg);
+  /* background-size: cover; */
 }
 
 .navbar-style {
@@ -100,9 +102,8 @@ body {
 /**************************************** table part style************************************/
 
 tbody {
-  background-color: #d7fdfd;
+  background-color: rgba(135, 231, 250, 0.4);
   color: #08253f;
-
 
 }
 
@@ -118,7 +119,7 @@ td {
 } */
 
 tr:nth-child(odd) {
-  background-color: #e4e4e4;
+  background-color: rgba(202, 92, 120, 0.4);
   color: #08253f;
 }
 
@@ -144,14 +145,12 @@ table tr td:first-child::before {
 table{ 
   border-spacing: 1; 
   border-collapse: collapse; 
-  background:white;
   border-radius:50px;
   overflow:hidden;
   max-width:1200px; 
   width:100%;
-  margin:0 auto;
-  position:relative;
-  
+  margin:2em auto;
+  position:relative; 
 }
 
 
