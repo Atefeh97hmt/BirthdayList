@@ -119,6 +119,16 @@ tr:nth-child(even) {
   font-size: large;
 }
 
+tr:nth-child(even):hover {
+  background-color: rgba(241, 60, 202, 0.5);
+ 
+}
+
+tr:nth-child(odd):hover {
+  background-color: rgba(46, 5, 85, 0.5);
+}
+
+
 th {
   background-color: rgba(255, 0, 128, 0.7);
   color: #ffffff;
