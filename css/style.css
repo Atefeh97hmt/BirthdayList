@@ -16,7 +16,7 @@ body {
   width: 100%;
   z-index: 10;
   top: 0;
-  background: #193855;
+  background: rgba(12, 35, 110, 0.7);
   padding: 30px 40px;
   text-align: center;
 }
@@ -101,35 +101,31 @@ body {
 
 /**************************************** table part style************************************/
 
-tbody {
-  background-color: rgba(135, 231, 250, 0.4);
-  color: #08253f;
-
-}
-
 th,
 td {
   text-align: center;
   padding: 10px;
-
 }
-/* 
-td {
-  border: 2px solid #a0e6f8;
-} */
 
 tr:nth-child(odd) {
-  background-color: rgba(202, 92, 120, 0.4);
+  background-color: rgba(89, 231, 148, 0.5);
   color: #08253f;
+  font-size: large;
 }
-
+tr:nth-child(even) {
+  background-color: rgba(116, 146, 241, 0.5);
+  color: #08253f;
+  font-size: large;
+}
 th {
-
-  background-color: #a0ff9d;
-  color: #042653;
+  background-color: rgba(255, 0, 128, 0.7);
+  color: #ffffff;
   z-index: 2;
+  vertical-align: middle!important;
 }
 
+
+  
 
 table tr {
   counter-increment: row-num;
@@ -138,6 +134,8 @@ table tr {
 
 table tr td:first-child::before {
   content: counter(row-num) " ";
+  color: #ff008c;
+  font-size:large;
 } 
 
 

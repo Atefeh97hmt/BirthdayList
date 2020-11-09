@@ -124,8 +124,6 @@ function sortlist(colNum, type) {
     let tbody = birthdayList.querySelector('tbody');
 
     let rowsArray = Array.from(tbody.rows);
-
-
     let compare;
 
     switch (type) {
