@@ -112,20 +112,22 @@ tr:nth-child(odd) {
   color: #08253f;
   font-size: large;
 }
+
 tr:nth-child(even) {
   background-color: rgba(116, 146, 241, 0.5);
   color: #08253f;
   font-size: large;
 }
+
 th {
   background-color: rgba(255, 0, 128, 0.7);
   color: #ffffff;
   z-index: 2;
-  vertical-align: middle!important;
+  vertical-align: middle !important;
 }
 
 
-  
+
 
 table tr {
   counter-increment: row-num;
@@ -135,20 +137,20 @@ table tr {
 table tr td:first-child::before {
   content: counter(row-num) " ";
   color: #ff008c;
-  font-size:large;
-} 
+  font-size: large;
+}
 
 
 
-table{ 
-  border-spacing: 1; 
-  border-collapse: collapse; 
-  border-radius:50px;
-  overflow:hidden;
-  max-width:1200px; 
-  width:100%;
-  margin:2em auto;
-  position:relative; 
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 2em auto;
+  position: relative;
 }
 
 
