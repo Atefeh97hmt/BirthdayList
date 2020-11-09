@@ -106,24 +106,16 @@ tbody {
 
 }
 
-.responstable {
-  margin: 2em 0;
-  width: 95%;
-  margin-right: 30px;
-
-}
-
-
 th,
 td {
   text-align: center;
   padding: 10px;
 
 }
-
+/* 
 td {
   border: 2px solid #a0e6f8;
-}
+} */
 
 tr:nth-child(odd) {
   background-color: #F5F5F5;
@@ -145,7 +137,25 @@ table tr {
 
 table tr td:first-child::before {
   content: counter(row-num) " ";
+} 
+
+
+
+table{ 
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:white;
+  border-radius:50px;
+  overflow:hidden;
+  max-width:1200px; 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  
 }
+
+
+
 
 /**************************************** media query************************************/
 
