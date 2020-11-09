@@ -100,7 +100,7 @@ body {
 /**************************************** table part style************************************/
 
 tbody {
-  background-color: #ecfcfc;
+  background-color: #d7fdfd;
   color: #08253f;
 
 
@@ -118,7 +118,7 @@ td {
 } */
 
 tr:nth-child(odd) {
-  background-color: #F5F5F5;
+  background-color: #e4e4e4;
   color: #08253f;
 }
 
