@@ -94,8 +94,9 @@ body {
 
 
 .table-day{
-  cursor: pointer!important;
+  cursor: pointer;
 }
+
 .fa-search{
   position: absolute;
   left:20% ;
