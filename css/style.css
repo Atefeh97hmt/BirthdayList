@@ -8,7 +8,6 @@ body {
   font-family: iran-yekan;
   direction: rtl;
   background-image: url(../img/2.jpg);
-  /* background-size: cover; */
 }
 
 .navbar-style {
@@ -42,15 +41,15 @@ body {
 
 .add-btn {
   padding: 8px;
-  background-color: #fdff88;
-  color: #043552;
+  background-color: #009879;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 50px;
   width: 200px;
-  border: 2px solid #23b14e;
+  border: 2px solid #49dffa;
 
 }
 
@@ -60,36 +59,29 @@ body {
   border: 2px solid #ffe76f;
 }
 
+
 .edit-btn {
-  color: #043552;
-  background-color: #fdff88;
-  border-radius: 50px;
-  border: 2px solid #23b14e;
+  color: #044718;
+  
 }
 
 .delete-btn {
-  color: white;
-  background-color: #b11b1b;
-  margin-right: 2px;
-  border-radius: 50px;
-  border: 2px solid #ff0000;
+  color: #b11b1b;
+ 
 }
 
 .edit-btn:hover {
-  background: black;
-  color: white;
-  border: 2px solid #23b14e;
+
+  color: #03912e;
 }
 
 .delete-btn:hover {
-  color: white;
-  background-color: #ff0000;
-  border: 2px solid #b11b1b;
+  color: #ff0000;
 }
 
 .filter {
   margin: 0;
-  border: 2px solid #23b14e;
+  border: 2px solid #49dffa;
   border-radius: 50px;
   padding: 7px;
   font-size: 16px;
@@ -97,8 +89,19 @@ body {
   background: #FFFFFF;
   color: black;
   width: 180px;
+  position: relative;
 }
 
+
+.table-day{
+  cursor: pointer!important;
+}
+.fa-search{
+  position: absolute;
+  left:20% ;
+  top: 35%;
+  color: #720808;
+}
 /**************************************** table part style************************************/
 
 th,
@@ -108,35 +111,31 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: rgba(89, 231, 148, 0.5);
-  color: #08253f;
+  background-color: #e9e9fa;
+  color: #000000;
   font-size: large;
 }
-
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+tbody td:last-child{
+  border-left: 2px solid #009879;
+}
+tbody td:first-child{
+  border-right: 2px solid #009879;
+}
 tr:nth-child(even) {
-  background-color: rgba(116, 146, 241, 0.5);
-  color: #08253f;
+  background-color: #f3f3f3;
+  color: #000000;
   font-size: large;
 }
-
-tr:nth-child(even):hover {
-  background-color: rgba(241, 60, 202, 0.5);
- 
-}
-
-tr:nth-child(odd):hover {
-  background-color: rgba(49, 218, 27, 0.5);
-}
-
 
 th {
-  background-color: rgba(255, 0, 128, 0.7);
-  color: #ffffff;
+  background-color: #009879;
+   color: #ffffff;
   z-index: 2;
   vertical-align: middle !important;
 }
-
-
 
 
 table tr {
@@ -146,21 +145,20 @@ table tr {
 
 table tr td:first-child::before {
   content: counter(row-num) " ";
-  color: #ff008c;
+  color: #8d1717;
   font-size: large;
 }
-
-
 
 table {
   border-spacing: 1;
   border-collapse: collapse;
-  border-radius: 50px;
   overflow: hidden;
   max-width: 1200px;
   width: 100%;
   margin: 2em auto;
   position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
 }
 
 

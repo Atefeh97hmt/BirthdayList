@@ -31,8 +31,8 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.month;
     cell4 = newRow.insertCell(4);
-    cell4.innerHTML = `<button type="button" class="btn edit-btn" onClick="onEdit(this)">Edit</button>
-                       <button type="button" class="btn delete-btn" onClick="onDelete(this)">Delete</button>`;
+    cell4.innerHTML = `<button type="button" class="btn edit-btn" onClick="onEdit(this)"><i class="fas fa-edit"></i></button>
+                       <button type="button" class="btn delete-btn" onClick="onDelete(this)"><i class="fa fa-trash"></i></button>`;
 }
 
 function resetForm() {
