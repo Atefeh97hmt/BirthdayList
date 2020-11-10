@@ -7,7 +7,8 @@
 body {
   font-family: iran-yekan;
   direction: rtl;
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/9.jpg);
+
 }
 
 .navbar-style {
@@ -79,30 +80,38 @@ body {
   color: #ff0000;
 }
 
-.filter {
-  margin: 0;
-  border: 2px solid #49dffa;
-  border-radius: 50px;
-  padding: 7px;
-  font-size: 16px;
-  text-align: center;
-  background: #FFFFFF;
-  color: black;
-  width: 180px;
-  position: relative;
-}
 
 
 .table-day{
   cursor: pointer;
 }
 
-.fa-search{
-  position: absolute;
-  left:20% ;
-  top: 35%;
-  color: #720808;
+.search-box {
+  position: relative;
+width: 120px;
 }
+.search-box i {
+  color: #009879;
+  position: absolute;
+  font-size: 19px;
+left: 20px;
+top: 20px;
+}
+.filter {
+  margin: 0;
+  border: 2px solid #49dffa;
+  border-radius: 50px;
+  padding: 7px;
+  font-size: 16px;
+  text-align: right;
+  background: #FFFFFF;
+  color: black;
+width: 180px;
+ }
+
+
+
+ 
 /**************************************** table part style************************************/
 
 th,
@@ -180,5 +189,19 @@ table {
     width: 22%;
     font-size: 12px;
   }
-
+  .filter {
+    width: 80px;
+  }
+  th{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:380px) {
+  
+  .filter {
+    width: 50px;
+  }
+  .search-box i {
+  display: none;
+  }
 }
