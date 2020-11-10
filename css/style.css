@@ -63,12 +63,12 @@ body {
 
 .edit-btn {
   color: #044718;
-  
+
 }
 
 .delete-btn {
   color: #b11b1b;
- 
+
 }
 
 .edit-btn:hover {
@@ -82,21 +82,23 @@ body {
 
 
 
-.table-day{
+.table-day {
   cursor: pointer;
 }
 
 .search-box {
   position: relative;
-width: 120px;
+  width: 120px;
 }
+
 .search-box i {
   color: #009879;
   position: absolute;
   font-size: 19px;
-left: 20px;
-top: 20px;
+  left: 20px;
+  top: 20px;
 }
+
 .filter {
   margin: 0;
   border: 2px solid #49dffa;
@@ -106,12 +108,12 @@ top: 20px;
   text-align: right;
   background: #FFFFFF;
   color: black;
-width: 180px;
- }
+  width: 180px;
+}
 
 
 
- 
+
 /**************************************** table part style************************************/
 
 th,
@@ -125,15 +127,19 @@ tr:nth-child(odd) {
   color: #000000;
   font-size: large;
 }
+
 tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-tbody td:last-child{
+
+tbody td:last-child {
   border-left: 2px solid #009879;
 }
-tbody td:first-child{
+
+tbody td:first-child {
   border-right: 2px solid #009879;
 }
+
 tr:nth-child(even) {
   background-color: #f3f3f3;
   color: #000000;
@@ -142,7 +148,7 @@ tr:nth-child(even) {
 
 th {
   background-color: #009879;
-   color: #ffffff;
+  color: #ffffff;
   z-index: 2;
   vertical-align: middle !important;
 }
@@ -189,19 +195,23 @@ table {
     width: 22%;
     font-size: 12px;
   }
+
   .filter {
     width: 80px;
   }
-  th{
+
+  th {
     font-size: 12px;
   }
 }
+
 @media screen and (max-width:380px) {
-  
+
   .filter {
     width: 50px;
   }
+
   .search-box i {
-  display: none;
+    display: none;
   }
 }
